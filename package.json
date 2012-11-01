@@ -1,0 +1,34 @@
+{
+  "name": "csso-brunch",
+  "version": "0.0.1",
+  "author": "Yu Inao",
+  "description": "Brunch plugin for CSS-optimizer (CSSO)",
+  "contributors": [
+    {
+      "name": "Yu Inao",
+      "email": "yu.inao@facebook.com"
+    }
+  ],
+  "scripts": {
+    "prepublish": "coffee -o lib/ src/",
+    "postinstall": "node setup.js postinstall"
+  },
+  "main": "./lib/index",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/japboy/csso-brunch.git"
+  },
+  "keywords": [
+    "brunch",
+    "csso"
+  ],
+  "dependencies": {
+    "coffee-script": ">= 1.4.0",
+    "csso": "git://github.com/css/csso.git"
+  },
+  "license": "Public Domain",
+  "engines": {
+    "node": "0.8",
+    "npm": "1.1"
+  }
+}
